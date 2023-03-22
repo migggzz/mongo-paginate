@@ -1,0 +1,26 @@
+<div>
+    <table>
+        <thead>
+            <tr>
+                <td>Nombre</td>
+                <td>Apellido</td>
+                <td>E-mail</td>
+                <td>Genero</td>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each docs}}
+                <tr>
+                    <td>{{this.first_name}}</td>
+                    <td>{{this.last_name}}</td>
+                    <td>{{this.email}}</td>
+                    <td>{{this.gender}}</td>
+                </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <div>
+        <a href="{{prevLink}}">Previous</a>
+        <a href="{{nextLink}}">Next</a>
+    </div>
+</div>
