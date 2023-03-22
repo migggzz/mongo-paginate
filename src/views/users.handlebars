@@ -2,10 +2,10 @@
     <table>
         <thead>
             <tr>
-                <td>Nombre</td>
-                <td>Apellido</td>
+                <td>Name</td>
+                <td>Last Name</td>
                 <td>E-mail</td>
-                <td>Genero</td>
+                <td>Gender</td>
             </tr>
         </thead>
         <tbody>
@@ -20,7 +20,13 @@
         </tbody>
     </table>
     <div>
-        <a href="{{prevLink}}">Previous</a>
+        {{#if hasPrevPage}}
+            <a href="{{prevLink}}">Previous</a>
+        {{/if}}
+
+        {{#if hasNextPage}}
         <a href="{{nextLink}}">Next</a>
+        {{/if}}
+
     </div>
 </div>
